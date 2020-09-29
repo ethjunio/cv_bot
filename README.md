@@ -1,10 +1,10 @@
 # cv_bot
 
-
+**REQUIREMENTS**
 Make sure you have Latex and Python3 (plus libraries numpy and pandas) installed
 
 
-FILES
-Latex_template.tex: original latex template with all the placeholders
-CSV.csv: contains the data to fill in the latex template
+**FILES DESCRIPTION\**
+Latex_template.tex: original latex template with all the placeholders\
+CSV.csv: contains the data to fill in the latex template\
 Script.py: run this script to generate the final CV 
