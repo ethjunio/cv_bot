@@ -4,14 +4,12 @@ import os
 import subprocess
 
 df = pd.read_csv("/Users/alessandrocalmanovici/Documents/ETHJuniors/CSV.csv")
-print(len(df.columns))
+
+
+## CREATE A DICTIONARE OUT OF THE CSV DATA
 dict_template = dict()
 for elem in df.columns:
 	dict_template[elem] = df.iloc[0][elem]
-
-#print(dict_template)
-
-
 
 
 ## REPLACE & SYMBOL WITH AND, OTHERWISE LATEX CODE DOES NOT COMPILE
