@@ -3,7 +3,7 @@ import pandas as pd
 import os
 import subprocess
 
-df = pd.read_csv("/Users/alessandrocalmanovici/Documents/ETHJuniors/CSV.csv")
+df = pd.read_csv("CSV.csv")
 
 
 ## CREATE A DICTIONARE OUT OF THE CSV DATA
