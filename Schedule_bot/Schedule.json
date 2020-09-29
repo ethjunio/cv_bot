@@ -1,0 +1,199 @@
+{
+  "interviews": [
+    {
+      "matchId": 2,
+      "companyId": "ETH Juniors",
+      "candidateId": "Alessandro Calmanovici",
+      "timeSlot": {
+        "id": 1,
+        "timeRange": "08:00 - 08:45"
+      },
+      "interviewRoom": {
+        "id": 1,
+        "name": "Awesome room n. 1"
+      }
+    },
+    {
+      "matchId": 5,
+      "companyId": "ETH Juniors",
+      "candidateId": "Matthias Stahli",
+      "timeSlot": {
+        "id": 2,
+        "timeRange": "9:00 - 9:45"
+      },
+      "interviewRoom": {
+        "id": 2,
+        "name": "Super room 1"
+      }
+    },
+    {
+      "matchId": 7,
+      "companyId": "ETH Juniors",
+      "candidateId": "Roger Federer",
+      "timeSlot": {
+        "id": 433,
+        "timeRange": "11:00 - 11:45"
+      },
+      "interviewRoom": {
+        "id": 2,
+        "name": "Super room 1"
+      }
+    },
+    {
+      "matchId": 6,
+      "companyId": "ETH Juniors",
+      "candidateId": "Pippo",
+      "timeSlot": {
+        "id": 3,
+        "timeRange": "10:00 - 10:45"
+      },
+      "interviewRoom": {
+        "id": 1,
+        "name": "Awesome room n. 1"
+      }
+    },
+    {
+      "matchId": 11,
+      "companyId": "JP Morgan",
+      "candidateId": "Alessandro Calmanovici",
+      "timeSlot": {
+        "id": 10,
+        "timeRange": "13:00 - 13:45"
+      },
+      "interviewRoom": {
+        "id": 7,
+        "name": "Awesome room n. 1"
+      }
+    },
+    {
+      "matchId": 13,
+      "companyId": "Goldman Sachs",
+      "candidateId": "Alessandro Calmanovici",
+      "timeSlot": {
+        "id": 7,
+        "timeRange": "12:00 - 12:45"
+      },
+      "interviewRoom": {
+        "id": 2,
+        "name": "Super room 1"
+      }
+    },
+    {
+      "matchId": 18,
+      "companyId": "McKinsey",
+      "candidateId": "Alessandro Calmanovici",
+      "timeSlot": {
+        "id": 20,
+        "timeRange": "15:00 - 15:45"
+      },
+      "interviewRoom": {
+        "id": 3,
+        "name": "Great room"
+      }
+    },
+    {
+      "matchId": 22,
+      "companyId": "McKinsey",
+      "candidateId": "Matthias Stahli",
+      "timeSlot": {
+        "id": 28,
+        "timeRange": "16:00 - 16:45"
+      },
+      "interviewRoom": {
+        "id": 3,
+        "name": "Great room"
+      }
+    },
+    {
+      "matchId": 25,
+      "companyId": "Goldman Sachs",
+      "candidateId": "Matthias Stahli",
+      "timeSlot": {
+        "id": 15,
+        "timeRange": "17:00 - 17:45"
+      },
+      "interviewRoom": {
+        "id": 1,
+        "name": "Awesome room n. 1"
+      }
+    },
+    {
+      "matchId": 33,
+      "companyId": "JP Morgan",
+      "candidateId": "Matthias Stahli",
+      "timeSlot": {
+        "id": 56,
+        "timeRange": "21:00 - 21:45"
+      },
+      "interviewRoom": {
+        "id": 1,
+        "name": "Awesome room n. 1"
+      }
+    },
+    {
+      "matchId": 38,
+      "companyId": "Bachelorette",
+      "candidateId": "Matthias Stahli",
+      "timeSlot": {
+        "id": 3,
+        "timeRange": "20:00 - 20:45"
+      },
+      "interviewRoom": {
+        "id": 1,
+        "name": "Awesome room n. 1"
+      }
+    },
+    {
+      "matchId": 43,
+      "companyId": "Novartis",
+      "candidateId": "Roger Federer",
+      "timeSlot": {
+        "id": 19,
+        "timeRange": "10:00 - 10:45"
+      },
+      "interviewRoom": {
+        "id": 1,
+        "name": "Awesome room n. 1"
+      }
+    },
+    {
+      "matchId": 50,
+      "companyId": "ATP",
+      "candidateId": "Roger Federer",
+      "timeSlot": {
+        "id": 31,
+        "timeRange": "10:00 - 10:45"
+      },
+      "interviewRoom": {
+        "id": 2,
+        "name": "Super room 1"
+      }
+    },
+    {
+      "matchId": 55,
+      "companyId": "Goldman Sachs",
+      "candidateId": "Roger Federer",
+      "timeSlot": {
+        "id": 2,
+        "timeRange": "10:00 - 10:45"
+      },
+      "interviewRoom": {
+        "id": 2,
+        "name": "Super room 1"
+      }
+    },
+    {
+      "matchId": 57,
+      "companyId": "Bachelorette",
+      "candidateId": "Roger Federer",
+      "timeSlot": {
+        "id": 6,
+        "timeRange": "10:00 - 10:45"
+      },
+      "interviewRoom": {
+        "id": 3,
+        "name": "Great room"
+      }
+    }
+]
+}

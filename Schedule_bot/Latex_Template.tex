@@ -1,0 +1,97 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Conference Booklet
+% LaTeX Template
+% Version 1.0 (22/12/2019)
+%
+% This template originates from:
+% https://www.LaTeXTemplates.com
+%
+% Authors:
+% Maxime Lucas (ml.maximelucas@gmail.com) 
+% Pau Clusella
+% Modifications for LaTeX Templates by Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% GNU General Public License v3.0
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Conference Booklet
+% Structural Definitions
+% Version 1.0 (24/11/2019)
+%
+% This template originates from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Maxime Lucas (ml.maximelucas@gmail.com) 
+% Pau Clusella
+% Modifications for LaTeX Templates by Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% GNU General Public License v3.0
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\thispagestyle{empty}
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesClass{conferencebooklet}[2019/12/22 LaTeX Templates Conference Booklet Class v1.0]
+
+\DeclareOption*{\PassOptionsToClass{\CurrentOption}{scrbook}} % Pass through any options to the base class
+\ProcessOptions\relax % Process given options
+ % Load the base class
+
+
+\documentclass[
+	openany, % Allow chapters to start on odd and even pages
+	parskip=full, % Large space between paragraphs
+	20pt, % Default font size
+	a4paper, % Paper size, use letterpaper for US letter size
+]{extbook}
+
+\usepackage{graphicx} % Required for including images
+
+\setcounter{secnumdepth}{-2} % Remove all section numbering
+
+\usepackage{multicol} % Allows table cells to span multiple columns
+\usepackage{longtable} % Allows the creation of tables that automatically wrap to the next page
+
+\pagestyle{plain} % Use the plain page style for all headers and footers (only a page number)
+
+\usepackage{scrhack} % Fixes compatibility issues between KOMA-Script and other packages
+
+\usepackage[utf8]{inputenc} % Required for inputting international characters
+\usepackage[T1]{fontenc} % Output font encoding for international characters
+\usepackage[sfdefault, lf]{carlito} % Use the Carlito family of sans-serif fonts with lining figures
+\usepackage{microtype} % Improve typography
+\usepackage[table]{xcolor} % Required for defining and using custom colours
+\definecolor{myblue}{RGB}{52, 115, 116}
+\definecolor{myblue2}{RGB}{80, 105, 116}
+\newcommand{\IScolor}{myblue!65} 
+\newcommand{\CTcolor}{myblue2!61} 
+\usepackage{array} % Required for manipulating table columns
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}} % Define a new centred column type
+\newcommand{\IS}[4]{#1 & \cellcolor{\IScolor}#4 & {\bfseries#2} & #3 \\ \hline} 
+\newcommand{\CT}[4]{#1 & \cellcolor{\CTcolor}#4 & {\bfseries#2} & #3 \\ \hline} % Custom class defining the style and layout of the template
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+
+%------------------------------------------------
+
+\section{$Name$}
+
+\begin{longtable}[c]
+{|C{0.25\linewidth}| C{0.03\linewidth}| C{0.4\linewidth}C{0.3\linewidth}|}\hline	
+	$Interviews$
+\end{longtable}
+
+
+
+\end{document}
