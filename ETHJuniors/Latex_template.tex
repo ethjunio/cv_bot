@@ -1,0 +1,367 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+\usepackage[document]{ragged2e}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[5]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\ 
+      \textit{\small #5}
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeSubheadingW}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} 
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textit{#2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in,rightmargin=1.8in, leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListStartIT}{\begin{itemize}[leftmargin=0.15in, leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}\justifying}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\huge \scshape $Name$} \\ \vspace{2pt}
+     $Nationality$ $|$ $DOB$ $|$ $Permit$
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheadingW
+      {$Education1$}{ }
+      {$Level1$ in $Major1$, Specialization in $Specialization1$, $Grade1$/6}{$Period1$}
+    \resumeSubheadingW
+      {$Education2$}{ }
+      {$Level2$ in $Major2$, Specialization in $Specialization2$, $Grade2$/6}{$Period2$}
+     \resumeSubheadingW
+      {$Education3$}{ }
+      {$Level3$ in $Major3$, Specialization in $Specialization3$, $Grade3$/6}{$Period3$}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheadingW
+      {$JobTitle1$}{$Position1$ position}
+      {$Experience1$}{$JobPeriod1$}{}
+      \resumeItemListStart
+        \resumeItem{$JobDescription1$}
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{$Project1$}}{$TypeProject1$}
+          \resumeItemListStart
+            \resumeItem{$DescProject1$}
+        \resumeItem{Grade: $GradeProject1$}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{$Project2$}}{$TypeProject2$}
+          \resumeItemListStart
+            \resumeItem{$DescProject2$}
+        \resumeItem{Grade: $GradeProject2$}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{$Project3$}}{$TypeProject3$}
+          \resumeItemListStart
+            \resumeItem{$DescProject3$}
+        \resumeItem{Grade: $GradeProject3$}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{$Project4$}}{$TypeProject4$}
+          \resumeItemListStart
+            \resumeItem{$DescProject4$}
+        \resumeItem{Grade: $GradeProject4$}
+          \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+
+%-----------WHAT I AM LOOKING FOR-----------
+\section{What I am looking for}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{$DesJobType$ position in $POW$}}{\textit{\small Start date $StartDate$}}
+          \resumeItemListStart
+            \resumeItem{Areas of interest: $AOI1$ - $AOI2$  - $AOI3$  - $AOI4$  - $AOI5$ }
+        \resumeItem{Desired travel activity: $TravelAct$}
+        \resumeItem{Career goal: $CareerGoal$.}
+        \resumeItem{Position requirements: $PositionReq$}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+%
+%-----------EXTRACURRICULARS -----------
+\section{Extracurriculars}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{$Extra1$ - $Activity1$}}
+          {$ExtraPeriod1$}
+          \resumeItemListStart
+            \resumeItem{$ExtraDes1$}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{$Extra2$ - $Activity2$}}{$ExtraPeriod2$}
+          \resumeItemListStart
+            \resumeItem{$ExtraDes2$}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+ 
+%   
+%\section{Languages}
+%\resumeSubHeadingListStart
+% \begin{itemize}
+%    \small{
+%        \item{\textbf{Italian}: native}
+%        \item{\textbf{Romanian}: native}
+%        \item{\textbf{English}: fluent}
+%        \item{\textbf{German}: conversational}
+%        \item{\textbf{French}: conversational}
+%         }
+% \end{itemize}
+% \resumeSubHeadingListEnd
+
+
+
+\section{Languages}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{$Lan1$}}
+          {$Lev1$}
+      \resumeProjectHeading
+          {\textbf{$Lan2$}}
+          {$Lev2$}
+      \resumeProjectHeading
+          {\textbf{$Lan3$}}
+          {$Lev3$}
+      \resumeProjectHeading
+          {\textbf{$Lan4$}}
+          {$Lev4$}
+      \resumeProjectHeading
+          {\textbf{$Lan5$}}
+          {$Lev5$}
+    \resumeSubHeadingListEnd
+
+
+\section{IT}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{$IT1$}}
+          {$LevIT1$}
+          \resumeItemListStart
+            \resumeItem{$DesIT1$}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{$IT2$}}
+          {$LevIT2$}
+          \resumeItemListStart
+            \resumeItem{$DesIT2$}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{$IT3$}}
+          {$LevIT3$}
+          \resumeItemListStart
+            \resumeItem{$DesIT3$}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{$IT4$}}
+          {$LevIT4$}
+          \resumeItemListStart
+            \resumeItem{$DesIT4$}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{$IT5$}}
+          {$LevIT5$}
+          \resumeItemListStart
+            \resumeItem{$DesIT5$}
+          \resumeItemListEnd
+          \break
+      \resumeProjectHeading
+          {\textbf{$IT6$}}
+          {$LevIT6$}
+          \resumeItemListStart
+            \resumeItem{$DesIT6$}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{$IT7$}}
+          {$LevIT7$}
+          \resumeItemListStart
+            \resumeItem{$DesIT7$}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{$IT8$}}
+          {$LevIT8$}
+          \resumeItemListStart
+            \resumeItem{$DesIT8$}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{$IT9$}}
+          {$LevIT9$}
+          \resumeItemListStart
+            \resumeItem{$DesIT9$}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{$IT10$}}
+          {$LevIT10$}
+          \resumeItemListStart
+            \resumeItem{$DesIT10$}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{$IT11$}}
+          {$LevIT11$}
+          \resumeItemListStart
+            \resumeItem{$DesIT11$}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{$IT12$}}
+          {$LevIT12$}
+          \resumeItemListStart
+            \resumeItem{$DesIT12$}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+    
+    
+\section{THINGS ABOUT ME}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{$About1$}}
+          { }
+          \resumeItemListStart
+            \resumeItem{$AboutDes1$}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{$About2$}}
+          { }
+          \resumeItemListStart
+            \resumeItem{$AboutDes2$}
+          \resumeItemListEnd
+
+ 
+    \resumeSubHeadingListEnd
+
+
+
+%-------------------------------------------
+\end{document}

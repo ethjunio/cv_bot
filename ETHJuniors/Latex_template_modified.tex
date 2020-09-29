@@ -1,0 +1,367 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+\usepackage[document]{ragged2e}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[5]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\ 
+      \textit{\small #5}
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeSubheadingW}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} 
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textit{#2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in,rightmargin=1.8in, leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListStartIT}{\begin{itemize}[leftmargin=0.15in, leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}\justifying}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\huge \scshape Alessandro Calmanovici} \\ \vspace{2pt}
+     Italian $|$ 03.05.1994 $|$ Permit-B
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheadingW
+      {ETH Zurich}{ }
+      {Master in Neural Systems and Computation, Specialization in Data Science, 5.3/6}{01.02.2017 - 18.12.2019}
+    \resumeSubheadingW
+      {University of Pisa}{ }
+      {Bachelor in Computer Engineering, Specialization in Data Science, 6/6}{01.09.2013 - 01.11.2016}
+     \resumeSubheadingW
+      {Liceo Scientifico Michelangelo, Cagliari}{ }
+      {Gymnasium in Scientific Italian school program, Specialization in IT, 6/6}{01.09.2008 - 01.07.2013}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheadingW
+      {Data Scientist and Digital Supply Chain Agent}{Part-time position}
+      {ETH Juniors, contractor for Takeda Pharmaceuticals till 07/2020}{07.05.2018 -}{}
+      \resumeItemListStart
+        \resumeItem{Data Scientist with managerial responsibilities. Developed strategy for data science projects and team expansion. Performed EDA on top of production and performance data. Built machine learning models and neural networks to predict yields, classify batches, optimize KPIs, perform root cause analysis, forecast sales demand, identify erroneous transactions. Used black-box explanation methods to interpret and present modeling results to key stakeholders and SMEs. Reference person in Zurich for PowerBI/Qlik dashboard development and deployment.}
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Neural rap lyrics generation with rhyme density biased sampling}}{Master Thesis}
+          \resumeItemListStart
+            \resumeItem{Collaboration with Musixmatch and their Machine Learning team based in Bologna, Italy. Fine-tuned the GPT2 language model network released by OpenAI on a rap lyrics dataset provided by Musixmatch. Proposed a novel inference mode sampling strategy which biases next word probabilities to improve rhyme density on the generated lyrics. Medium article: https://blog.musixmatch.com/generating-rap-lyrics-with-ai-13fb8d33ab5e}
+        \resumeItem{Grade: 5.5}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Summary refinement through Denoising}}{Project}
+          \resumeItemListStart
+            \resumeItem{We propose a simple method for postprocessing the outputs of a text summarization system in order to refine its overall quality. Our approach is to train text-to-text rewriting models to correct information redundancy errors that may arise during summarization. We train on synthetically generated noisy summaries, testing three different types of noise that introduce out-of-context information within each summary.}
+        \resumeItem{Grade: 6}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Video-to-Video Translation using Cycle-Consistent Adversarial Networks}}{Project}
+          \resumeItemListStart
+            \resumeItem{Worked for the Computer Vision and Geometry Group at ETH under Zhaopeng Cui's supervision. Used the latest cycle-consistent adversarial networks for video-to-video translation with focus on day to night conversion. Added an extra flow network to a CycleGAN and improved baseline performance both quantitatively and qualitatively: less flickering artifacts and better frames transitions. Tools: Python, PyTorch, OpenCV, FlowNet2}
+        \resumeItem{Grade: 5.5}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{BURSDET: social network hate monitoring system}}{Bachelor Thesis}
+          \resumeItemListStart
+            \resumeItem{Backend and Frontend development of a platform to monitor hate bursts on data collected from social media using Time Series analysis and the Kleinberg algorithm. Tools: R, Php, D3.js, Cubism.js.}
+        \resumeItem{Grade: 6}
+          \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+
+%-----------WHAT I AM LOOKING FOR-----------
+\section{What I am looking for}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Full-time position in Zurich area}}{\textit{\small Start date 01.11.20}}
+          \resumeItemListStart
+            \resumeItem{Areas of interest: Data Science - IT Consulting  - Medtec  - Computer Vision  - Artificial Intelligence }
+        \resumeItem{Desired travel activity: Monthly}
+        \resumeItem{Career goal: After spending two years as a data science consultant for Takeda Pharmaceuticals, my current career goal is to expand my expertise in the AI field and transit steadily towards a senior position. Ideally in 5 to 10 years I would like to see myself as a data science team leader with a strong technical and practical experience in data science applied to high impact business problems..}
+        \resumeItem{Position requirements: Since my main drivers are learning, expanding my knowledge and adding a strong value to the organisation, I am looking for a position which rewards proactivity and initiative. I feel stimulated by long term challenges, complex projects and by sharing a common goal with my coworkers.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+%
+%-----------EXTRACURRICULARS -----------
+\section{Extracurriculars}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Bridge - Professional player and teacher}}
+          {01.03.2018 - 01.11.2018}
+          \resumeItemListStart
+            \resumeItem{I've been playing bridge for the U21 and U26 Italian national teams since I was 13 years old. In August 2015 we won the world junior BAM teams championship in Opatija, Croatia. I also held a beginner bridge course in 2018 at ETH together with Gianluca Bergami, which was attended by around 25 international ETH students.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Scholarships - Winner of MIUR Scholarship in 2014, 2015 and 2016}}{01.01.2014 - 01.01.2016}
+          \resumeItemListStart
+            \resumeItem{Financial contribution issued in 2014, 2015 and 2016 by the Italian Ministry of Education to 1000 italian students studying abroad.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+ 
+%   
+%\section{Languages}
+%\resumeSubHeadingListStart
+% \begin{itemize}
+%    \small{
+%        \item{\textbf{Italian}: native}
+%        \item{\textbf{Romanian}: native}
+%        \item{\textbf{English}: fluent}
+%        \item{\textbf{German}: conversational}
+%        \item{\textbf{French}: conversational}
+%         }
+% \end{itemize}
+% \resumeSubHeadingListEnd
+
+
+
+\section{Languages}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Italian}}
+          {Native}
+      \resumeProjectHeading
+          {\textbf{Romanian}}
+          {Native}
+      \resumeProjectHeading
+          {\textbf{English}}
+          {Fluent}
+      \resumeProjectHeading
+          {\textbf{German}}
+          {Conversational}
+      \resumeProjectHeading
+          {\textbf{French}}
+          {Conversational}
+    \resumeSubHeadingListEnd
+
+
+\section{IT}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Python}}
+          {Advanced}
+          \resumeItemListStart
+            \resumeItem{I spent the last 5 years coding mainly in Python, using most of the machine learning and deep learning libraries available. I am proficient with TensorFlow, PyTorch, Keras, OpenCV, Scikit-learn, NLTK.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Latex}}
+          {Advanced}
+          \resumeItemListStart
+            \resumeItem{I have used Latex to write all my projects, thesis and CV.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{PowerBI, Qlik}}
+          {Advanced}
+          \resumeItemListStart
+            \resumeItem{While I worked for Takeda, I was the main reference person in Zurich for the development and deployment of PowerBI and Qlik dashboards.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Javascript}}
+          {Intermediate}
+          \resumeItemListStart
+            \resumeItem{I have developed websites and worked on web based projects which made an intense use of JavaScript and PHP. I have used popular libraries like Cubism.js and Angular.js.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{HTML/CSS}}
+          {Intermediate}
+          \resumeItemListStart
+            \resumeItem{Please see above description, HTML and CSS were always the foundation of any web based application or website.}
+          \resumeItemListEnd
+          \break
+      \resumeProjectHeading
+          {\textbf{Office Tools}}
+          {Intermediate}
+          \resumeItemListStart
+            \resumeItem{I have leveraged the Office Tools within my two years at Takeda for regular presentations, lookup tables, fast data analysis and reports.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{R}}
+          {Intermediate}
+          \resumeItemListStart
+            \resumeItem{I have used R for EDA and machine learning for my bachelor's thesis and while working at Takeda. Despite my personal preference for Python, I often wrote scripts in R to make use of powerful packages and fast time series operations.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{GitGNU/Linux}}
+          {Intermediate}
+          \resumeItemListStart
+            \resumeItem{I used to work on a Linux machine during my bachelor studies and have always used the terminal to access cloud resources.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{C++}}
+          {Intermediate}
+          \resumeItemListStart
+            \resumeItem{I coded in C++ for most of my bachelor projects and exams, I have a very solid understanding of the language, data structures and syntax. What I am missing is some recent practice and updates on the latest developments.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{SQL}}
+          {Intermediate}
+          \resumeItemListStart
+            \resumeItem{The SQL class I had allowed me to gain a deep understanding of the language and the exam was extremely challenging, requiring to write complex queries and optimize their speed. I then used SQL for database access while working on personal and job projects.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Java}}
+          {Beginner}
+          \resumeItemListStart
+            \resumeItem{I wrote a full application in Java, a game which tests your verbal memory and saves the scores of all the participants.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{C}}
+          {Beginner}
+          \resumeItemListStart
+            \resumeItem{I wrote another full project in C, a terminal client-server application which allows two players to play Connect4 while connected to the same LAN.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+    
+    
+\section{THINGS ABOUT ME}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Hobbies}}
+          { }
+          \resumeItemListStart
+            \resumeItem{I regularly play tennis and train in a kickboxing gym, during summer I windsurf in Sardinia or on the Garda Lake.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Skills}}
+          { }
+          \resumeItemListStart
+            \resumeItem{I believe my best asset is the ability to learn anything in a short amount of time. I am a very curious person and I always need to understand a concept before being able to make use of it.}
+          \resumeItemListEnd
+
+ 
+    \resumeSubHeadingListEnd
+
+
+
+%-------------------------------------------
+\end{document}
