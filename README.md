@@ -9,4 +9,5 @@ Make sure you have Latex and Python3 (plus libraries numpy and pandas) installed
 
 Latex_template.tex: original latex template with all the placeholders\
 CSV.csv: contains the data to fill in the latex template\
-Script.py: run this script to generate the final CV 
+Script.py: run this script to generate the final CV\
+Latex_template_modified.pdf: the final CV obtained after running Script.py
